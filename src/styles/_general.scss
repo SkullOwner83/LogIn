@@ -1,0 +1,75 @@
+//Class to center elements of a container
+.Centered-Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+//Text box of only line styles
+.TextBox {
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-color: $PrimaryColor;
+    padding: var(--Padding);
+    user-select: contain;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: white;
+        transition: 0s;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-datalist-option {
+        background-color: transparent;
+    }
+}
+
+.Button {
+    font-size: 1.5rem;
+    background-color: $PrimaryColor;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: $BorderRadius;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: $OnPrimaryColor;
+        box-shadow: 0 0 20px $GlowFx;
+        transition: 0s;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}
+
+label {
+    color: $DryWhite;
+    font-size: 1.5rem;
+    margin-left: 8px;
+    user-select: none;
+}
+
+//Class to stack the form textboxes
+.Fields-Container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 3rem;    
+    text-align: center;
+    color: $PrimaryColor;
+    user-select: none;
+}
